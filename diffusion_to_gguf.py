@@ -32,7 +32,7 @@ if __name__ == '__main__':
 
     if sys.platform.startswith("linux"):
         sdcpp = sdcpp + "l"
-        #subprocess.Popen(["chmod", "700", sdcpp], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, cwd='.', text=True)
+        subprocess.Popen(["chmod", "700", sdcpp], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, cwd='.', text=True)
 
     while True:
 
