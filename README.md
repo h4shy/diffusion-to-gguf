@@ -1,4 +1,4 @@
-This is a minimal script to just do `git pull` and run it
+This is a minimal script to just do `git clone` and run it
 
 Just put the diffusion model in the same dir
 
