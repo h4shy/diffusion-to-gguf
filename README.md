@@ -1,4 +1,6 @@
-Just put the diffusion model in this dir and run the script
+This is a minimal script to just do `git pull` and run it
+
+Just put the diffusion model in the same dir
 
 No dependencies or venvs or anything else needed
 
