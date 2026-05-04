@@ -23,15 +23,8 @@ TYPES = [
 if __name__ == '__main__':
     os.makedirs("output", exist_ok=True)
 
-    while not os.path.isdir(os.path.dirname(sdcpp)):
-        if os.path.isdir("bin"):
-            sdcpp = "bin/sd-cli"
-            continue
-        print("\nPlease install stable-diffusion.cpp in current dir under 'sdcpp/' or 'bin/'.")
-        exit()
-
     if sys.platform.startswith("linux"):
-        sdcpp = sdcpp + "l"
+        sdcpp = "sdcpp/l/sd-cli"
         subprocess.Popen(["chmod", "700", sdcpp], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, cwd='.', text=True)
 
     while True:
